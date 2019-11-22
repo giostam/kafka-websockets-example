@@ -16,7 +16,7 @@ public class KafkaConsumer {
     @Autowired
     SimpMessagingTemplate template;
 
-    @KafkaListener(topics = "Topic1", groupId = "consumer-group")
+    @KafkaListener(topics = "Topic1")
     public void listen(String message) {
         log.info("Received message: " + message);
         template.convertAndSend("/topic/notification",
