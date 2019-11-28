@@ -24,7 +24,7 @@ services:
   websockets-app:
     build: ./kafka-websockets
     ports:
-      - "8080-8082:8080"
+      - "8080:8080"
   websockets-webapp:
     build: ./kafka-websockets-webapp
     ports:
